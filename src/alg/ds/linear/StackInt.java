@@ -3,8 +3,6 @@ package alg.ds.linear;
 /**
  * @author Emanuel TRÎNC
  * Array implementation of the 'Stack' data structure.
- * Advantage: Fast access and retrieval
- * Disadvantage: No support for generics
  * Space complexity: O(N)
  * Time complexity:
  * 		- insert: O(1)
@@ -29,15 +27,17 @@ public class StackInt {
 	 * @param item The item to be pushed on the stack.
 	 */
 	public void push(int item) {
-		
+		items[index] = item;
+		index++;
 	}
 	
 	/**
 	 * Method to return and retrieve the last element on the stack.
-	 * 
+	 * @return The last element on the stack.
 	 */
 	public int pop() {
-		
+		index--;
+		return items[index];
 	}
 	
 	/**

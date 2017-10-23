@@ -3,8 +3,6 @@ package alg.ds.linear;
 /**
  * @author Emanuel TRÎNC
  * Generic Linked list implementation of the 'Stack' data structure.
- * Advantages: 
- * Disadvantages: 
  * Space complexity: O(2N)
  * Time complexity:
  * 		- insert: O(1)
@@ -23,7 +21,7 @@ public class Stack<Item> {
 		Node<Item> node = new Node<>(item);
 		if (isEmpty()) {	// Put the item directly in the top variable if the stack is empty
 			top = node;
-		} else {			// 
+		} else {			// Put the item in the front of the linked list
 			node.next = top;
 			top = node;
 		}
