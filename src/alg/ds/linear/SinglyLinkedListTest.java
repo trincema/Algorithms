@@ -32,19 +32,19 @@ public class SinglyLinkedListTest {
     }
 	
 	@Test(expected = NullPointerException.class)
-    public void shouldThrowNullPointerByAddingNullElementAtIndex() {
-        list.add(1, null);
-    }
+	public void shouldThrowNullPointerByAddingNullElementAtIndex() {
+		list.add(1, null);
+	}
 	
 	@Test(expected = IndexOutOfBoundsException.class)
-    public void shouldThrowIndexOutOfBoundsAddIndexOutOfRange() {
-        list.add(1, "John");
-    }
+	public void shouldThrowIndexOutOfBoundsAddIndexOutOfRange() {
+		list.add(1, "John");
+	}
 	
 	@Test(expected = IndexOutOfBoundsException.class)
-    public void shouldThrowIndexOutOfBoundsGetIndexOutOfRange() {
-        list.get(0);
-    }
+	public void shouldThrowIndexOutOfBoundsGetIndexOutOfRange() {
+		list.get(0);
+	}
 	
 	@Test(expected = NullPointerException.class)
 	public void shouldThrowNullPointerIfElementNull() {
