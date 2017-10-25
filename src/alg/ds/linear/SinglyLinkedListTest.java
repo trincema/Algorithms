@@ -28,8 +28,8 @@ public class SinglyLinkedListTest {
 	
 	@Test(expected = NullPointerException.class)
 	public void shouldThrowNullPointerByAddingNullElement() {
-        list.add(null);
-    }
+		list.add(null);
+	}
 	
 	@Test(expected = NullPointerException.class)
 	public void shouldThrowNullPointerByAddingNullElementAtIndex() {
