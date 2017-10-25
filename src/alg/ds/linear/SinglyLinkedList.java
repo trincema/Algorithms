@@ -219,8 +219,8 @@ public class SinglyLinkedList<Element> {
 	}
 	
 	/**
-     * {@inheritDoc}
-     */
+	 * {@inheritDoc}
+	 */
 	@Override
 	public String toString() {
 		StringBuilder list = new StringBuilder("[");

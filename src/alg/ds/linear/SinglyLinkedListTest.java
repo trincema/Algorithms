@@ -12,9 +12,9 @@ public class SinglyLinkedListTest {
 	private SinglyLinkedList<String> list;
 	
 	@Before
-    public void setUp() {
-        list = new SinglyLinkedList<>();
-    }
+	public void setUp() {
+		list = new SinglyLinkedList<>();
+	}
 	
 	@Test
 	public void shouldBeEmptyAtTheBeginning() {
@@ -27,7 +27,7 @@ public class SinglyLinkedListTest {
 	}
 	
 	@Test(expected = NullPointerException.class)
-    public void shouldThrowNullPointerByAddingNullElement() {
+	public void shouldThrowNullPointerByAddingNullElement() {
         list.add(null);
     }
 	
