@@ -1,8 +1,5 @@
 package alg.ds.linear;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * @author Emanuel TRÎNC
  * Linked implementation of the 'SinglyLinkedList' data structure.
